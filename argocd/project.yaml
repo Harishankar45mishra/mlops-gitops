@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: mlops
+  namespace: argocd
+spec:
+  description: MLOps Platform
+  sourceRepos:
+    - 'https://github.com/Harishankar45mishra/mlops-gitops.git'
+  destinations:
+    - namespace: mlops
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'

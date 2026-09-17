@@ -4,4 +4,5 @@ metadata:
   name: iris-api-config
   namespace: mlops
 data:
-  MLFLOW_TRACKING_URI: "http://34.68.92.160:5000"
+  BACKEND_STORE_URI: postgresql://mlflow:Mlops@2026@34.45.83.138:5432/mlflowdb
+  ARTIFACT_ROOT: gs://mlops-platform-artifacts-dev
