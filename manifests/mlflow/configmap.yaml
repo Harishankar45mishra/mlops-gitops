@@ -6,3 +6,5 @@ metadata:
 data:
   BACKEND_STORE_URI: postgresql://mlflow:Mlops@2026@34.45.83.138:5432/mlflowdb
   ARTIFACT_ROOT: gs://mlops-platform-artifacts-dev
+  DB_HOST: "127.0.0.1"
+  DB_PORT: "5432"
